@@ -118,6 +118,7 @@ namespace Formating
                                 break;
                             default:
                                 Console.WriteLine("no function implemented with this name");
+                                break;
             
                        }
                     }
