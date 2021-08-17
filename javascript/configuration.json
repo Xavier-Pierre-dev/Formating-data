@@ -1,0 +1,44 @@
+[
+  [
+    {
+      "replacement": {
+        "input": "C",
+        "output": "D"
+      }
+    }
+  ],
+  [
+    {
+      "replacement": {
+        "input": "A",
+        "output": "Z"
+      }
+    }
+  ],
+  [
+    {
+      "replacement": {
+        "input": "G",
+        "output": "B"
+      }
+    }
+  ],
+  [
+    {
+      "regex": {
+        "regex-unformating-input": "([A-Z])([A-Z]+)([0-9]+)",
+        "regex-unformating-output": "$2$3$1",
+        "regex-formating-input": "([A-Z]+)([0-9]+)([A-Z])",
+        "regex-formating-output": "$3$1$2"
+      }
+    }
+  ],
+  [
+    {
+      "function": {
+        "function_formating": "function_formating1",
+        "function_unformating": "function_unformating1"
+      }
+    }
+  ]
+]
