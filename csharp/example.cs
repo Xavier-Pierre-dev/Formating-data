@@ -45,15 +45,15 @@ namespace Formating
             {
                 i = configuration.Count - 1;
                 increment = -1;
-                input = "input";
-                output = "output";
+                input = "output";
+                output = "input";
             }
             else
             {
                 i = 0;
-                increment = -1;
-                input = "output";
-                output = "input";
+                increment = 1;
+                input = "input";
+                output = "output";
             }
 
 
@@ -67,7 +67,7 @@ namespace Formating
                     {
                         valueInput = configuration[i][0]["replacement"][input];
                         valueOutput = configuration[i][0]["replacement"][output];
-                        Result = Regex.Replace(Result, @"" + valueInput, @"" + valueOutput);
+                        Result = Regex.Replace(Result, @"" + "" + valueInput, @"" + "" + valueOutput);
                     }
                 }
                 catch{
@@ -86,7 +86,7 @@ namespace Formating
                             valueInput = configuration[i][0]["regex"]["regex-formating-input"];
                             valueOutput = configuration[i][0]["regex"]["regex-formating-output"];
                         }
-                        Result = Regex.Replace(Result, @"" + valueInput, @"" + valueOutput);
+                        Result = Regex.Replace(Result, @"" + "" + valueInput, @"" + "" + valueOutput);
                     }
                 }
                 catch
