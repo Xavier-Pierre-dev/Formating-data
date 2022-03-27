@@ -52,7 +52,21 @@ flowchart TB
 <br>
 <div style="text-align:center">
 
-![image](replaceAperB.svg)
+```mermaid
+flowchart TB
+    subgraph Replace a text A per a text B
+    direction TB
+    data-->one-->dataFormating[data formated]-->two-->data
+        subgraph one["formating"]
+            direction LR
+            A-->B-->C-->D
+        end
+        subgraph two["unformating"]
+            direction RL
+            D1[D]-->C1[C]-->B1[B]-->A1[A]
+        end
+    end
+```
 
 </div>
 
